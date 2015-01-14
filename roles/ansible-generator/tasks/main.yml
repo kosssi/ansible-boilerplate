@@ -1,5 +1,13 @@
 ---
 
+- name: Stat README.md
+  stat: path=README.md
+  register: readme_stat
+
+- name: Move README to GENERATOR
+  command: mv README.md GENERATOR.md
+  when: readme_stat.stat.exists
+
 - name: Generate requirements.txt
   local_action: lineinfile
     dest=/home/kosssi/data/dev/_ONLINE/sharepear/ansible-playbook-sharepear/requirements.txt
