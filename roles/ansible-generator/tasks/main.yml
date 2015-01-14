@@ -10,7 +10,7 @@
 
 - name: Generate requirements.txt
   local_action: lineinfile
-    dest=/home/kosssi/data/dev/_ONLINE/sharepear/ansible-playbook-sharepear/requirements.txt
+    dest=./requirements.txt
     regexp=^{{ ansible_generator_roles[item].name }},
     line="{{ ansible_generator_roles[item].name }},{{ ansible_generator_roles[item].version }}"
     create=yes
@@ -19,9 +19,9 @@
 - name: Generate playbook
   local_action: template
     src=playbook.j2
-    dest=/home/kosssi/data/dev/_ONLINE/sharepear/ansible-playbook-sharepear/playbook.yml
+    dest=./playbook.yml
 
 - name: Generate Vagrantfile
   local_action: template
     src=vagrantfile.j2
-    dest=/home/kosssi/data/dev/_ONLINE/sharepear/ansible-playbook-sharepear/Vagrantfile
+    dest=./Vagrantfile
