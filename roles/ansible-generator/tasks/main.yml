@@ -1,13 +1,5 @@
 ---
 
-- name: Stat README.md
-  stat: path=README.md
-  register: readme_stat
-
-- name: Move README to GENERATOR
-  command: mv README.md GENERATOR.md
-  when: readme_stat.stat.exists
-
 - name: Generate requirements.txt
   local_action: lineinfile
     dest=./requirements.txt
