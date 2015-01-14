@@ -12,3 +12,7 @@
 {% for package in packages %}
     - { role: {{ ansible_generator_roles[package].name }}, tags: {{ package }} }
 {% endfor %}
+
+{% for include in includes %}
+- include : {{ include.include }}.yml
+{% endfor %}

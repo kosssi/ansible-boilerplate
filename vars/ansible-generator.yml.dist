@@ -4,8 +4,10 @@ project_name: sharepear
 
 packages:
   - apt
+  - fail2ban
   - iptables
+  - ssh
 
 includes:
-  - include: dbservers.yml
-  - include: webservers.yml
+  - include: dbservers
+  - include: webservers
