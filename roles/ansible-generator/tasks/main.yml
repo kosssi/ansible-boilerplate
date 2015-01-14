@@ -13,3 +13,7 @@
     src=playbook.j2
     dest=/home/kosssi/data/dev/_ONLINE/sharepear/ansible-playbook-sharepear/playbook.yml
 
+- name: Generate Vagrantfile
+  local_action: template
+    src=vagrantfile.j2
+    dest=/home/kosssi/data/dev/_ONLINE/sharepear/ansible-playbook-sharepear/Vagrantfile
