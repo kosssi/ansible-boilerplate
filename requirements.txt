@@ -1,1 +1,0 @@
-kosssi.ansible-generator,v0.1.0
