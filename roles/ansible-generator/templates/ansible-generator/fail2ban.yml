@@ -1,0 +1,10 @@
+---
+
+fail2ban_maxretry: 3
+fail2ban_bantime: 86400
+
+fail2ban_services:
+  - name: ssh
+    port: ssh
+    filter: sshd
+    logpath: /var/log/auth.log

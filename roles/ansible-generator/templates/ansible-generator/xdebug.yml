@@ -1,0 +1,26 @@
+---
+
+php_install:
+  - php5-xdebug
+
+php_configure:
+  - file: /etc/php5/cli/php.ini
+    values:
+      - { section: XDEBUG, key: xdebug.remote_enable, value: 'true' }
+      - { section: XDEBUG, key: xdebug.remote_connect_back, value: 'true' }
+      - { section: XDEBUG, key: xdebug.remote_host, value: 'localhost' }
+      - { section: XDEBUG, key: xdebug.remote_port, value: '9000' }
+      - { section: XDEBUG, key: xdebug.remote_handler, value: 'dbgp' }
+      - { section: XDEBUG, key: xdebug.remote_log, value: '/tmp/xdebug.log' }
+      - { section: XDEBUG, key: xdebug.idekey, value: 'XDEBUG' }
+      - { section: XDEBUG, key: xdebug.max_nesting_level, value: '200' }
+  - file: /etc/php5/apache2/php.ini
+    values:
+      - { section: XDEBUG, key: xdebug.remote_enable, value: 'true' }
+      - { section: XDEBUG, key: xdebug.remote_connect_back, value: 'true' }
+      - { section: XDEBUG, key: xdebug.remote_host, value: 'localhost' }
+      - { section: XDEBUG, key: xdebug.remote_port, value: '9000' }
+      - { section: XDEBUG, key: xdebug.remote_handler, value: 'dbgp' }
+      - { section: XDEBUG, key: xdebug.remote_log, value: '/tmp/xdebug.log' }
+      - { section: XDEBUG, key: xdebug.idekey, value: 'XDEBUG' }
+      - { section: XDEBUG, key: xdebug.max_nesting_level, value: '200' }

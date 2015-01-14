@@ -1,0 +1,11 @@
+---
+
+project_name: sharepear
+
+packages:
+  - apt
+  - iptables
+
+includes:
+  - include: dbservers.yml
+  - include: webservers.yml

@@ -1,0 +1,10 @@
+---
+
+- name: Generate your Ansible playbook ;)
+  hosts: localhost
+  sudo: no
+  gather_facts: False
+  vars_files:
+    - vars/ansible-generator.yml
+  roles:
+    - { role: ansible-generator, tags: ansible-generator }

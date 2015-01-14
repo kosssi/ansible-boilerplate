@@ -1,0 +1,10 @@
+---
+
+ssh_authorized_keys:
+  - name: www-data
+    home: /var/www
+    local:
+      -  "~/.ssh/id_rsa.pub"
+  - name: "{{ user_root }}"
+    local:
+      -  "~/.ssh/id_rsa.pub"

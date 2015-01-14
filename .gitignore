@@ -1,0 +1,4 @@
+.vagrant
+vendor
+vault-password.txt
+vars/ansible-generator.yml

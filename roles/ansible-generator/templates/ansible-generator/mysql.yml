@@ -1,0 +1,11 @@
+---
+
+# List of databases to be created
+mysql_databases:
+  - name: "{{ mysql_database }}"
+
+# List of users to be created
+mysql_users:
+  - name: "{{ mysql_user }}"
+    pass: "{{ mysql_password }}"
+    priv: "*.*:ALL"

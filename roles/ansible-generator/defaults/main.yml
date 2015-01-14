@@ -1,0 +1,14 @@
+---
+
+hosts: all
+sudo: yes
+
+ansible_generator_roles:
+  iptables:     { name: Stouts.iptables,          version:  1.0.6 }
+  fail2ban:     { name: nickjj.fail2ban,          version: v0.1.2 }
+  ssh:          { name: kosssi.ssh,               version: v1.0.0 }
+  apt:          { name: kosssi.apt,               version: v2.0.0 }
+  php:          { name: kosssi.php,               version: v1.0.0 }
+  composer:     { name: kosssi.composer,          version: v1.2.0 }
+  apache:       { name: kosssi.apache,            version: v1.0.2 }
+  mysql:        { name: ANXS.mysql,               version: v1.0.3 }

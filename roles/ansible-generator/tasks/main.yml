@@ -1,0 +1,15 @@
+---
+
+- name: Generate requirements.txt
+  local_action: lineinfile
+    dest=/home/kosssi/data/dev/_ONLINE/sharepear/ansible-playbook-sharepear/requirements.txt
+    regexp=^{{ ansible_generator_roles[item].name }},
+    line="{{ ansible_generator_roles[item].name }},{{ ansible_generator_roles[item].version }}"
+    create=yes
+  with_items: packages
+
+- name: Generate playbook
+  local_action: template
+    src=playbook.j2
+    dest=/home/kosssi/data/dev/_ONLINE/sharepear/ansible-playbook-sharepear/playbook.yml
+

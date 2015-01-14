@@ -1,0 +1,11 @@
+---
+
+apt_install:
+  - python-apt
+  - python-pycurl
+  - unattended-upgrades
+  - git
+  - curl
+  - npm
+  - nodejs
+  - nodejs-legacy

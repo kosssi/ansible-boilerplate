@@ -1,0 +1,14 @@
+---
+
+- name: Provision {{ project_name }}
+  hosts: {{ hosts }}
+  sudo: {{ sudo }}
+  vars_files:
+    - vars/config.yml
+{% for package in packages %}
+    - vars/ansible-generator/{{ package }}.yml
+{% endfor %}
+  roles:
+{% for package in packages %}
+    - { role: {{ ansible_generator_roles[package].name }}, tags: {{ package }} }
+{% endfor %}
