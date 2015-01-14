@@ -32,7 +32,7 @@ Install requirements:
 
 Launch your vagrant
 
-   vagrant up
+    vagrant up
 
 ## License
 
