@@ -4,11 +4,21 @@ Create your provisioning.
 
 ## Install
 
-    git@github.com:kosssi/ansible-boilerplate.git
+    git clone git@github.com:kosssi/ansible-boilerplate.git
     cd ansible-boilerplate
     cp vars/ansible-generator.yml.dist vars/ansible-generator.yml
 
 Configure the playbook in the file: `vars/ansible-generator.yml`
+
+## Choice of packages
+
+- apache
+- apt
+- fail2ban
+- iptables
+- mysql
+- php
+- ssh
 
 ## Generate ansible playbook
 
@@ -19,6 +29,10 @@ Command:
 Install requirements:
 
     ansible-galaxy install -r requirements.txt --force
+
+Launch your vagrant
+
+   vagrant up
 
 ## License
 
