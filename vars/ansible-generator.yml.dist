@@ -1,13 +1,26 @@
 ---
 
-project_name: sharepear
+project_name: generator
+
+#database_name: generator
+#database_user: generator
+#database_password: generator
 
 packages:
+#  - apache
   - apt
-  - fail2ban
-  - iptables
-  - ssh
+#  - composer
+#  - fail2ban
+#  - iptables
+#  - mysql
+#  - php
+#  - ssh
 
-includes:
-  - include: dbservers
-  - include: webservers
+
+#vars_files:
+#  - test.yml
+#  - test2.yml
+
+#includes:
+#  - include: dbservers
+#  - include: webservers
