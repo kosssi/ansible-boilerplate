@@ -7,4 +7,4 @@
   vars_files:
     - vars/ansible-generator.yml
   roles:
-    - { role: ansible-generator, tags: ansible-generator }
+    - { role: kosssi.generator, tags: ansible-generator }

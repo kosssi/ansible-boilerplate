@@ -6,6 +6,7 @@ Create your provisioning.
 
     git clone git@github.com:kosssi/ansible-boilerplate.git
     cd ansible-boilerplate
+    ansible-galaxy install -r requirements.txt --force
     cp vars/ansible-generator.yml.dist vars/ansible-generator.yml
 
 Configure the playbook in the file: `vars/ansible-generator.yml`
