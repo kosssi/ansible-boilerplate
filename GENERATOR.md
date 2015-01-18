@@ -29,6 +29,10 @@ Install requirements:
 
     ansible-galaxy install -r requirements.txt --force
 
+Configure your `/etc/hosts` by default:
+
+    project-name.dev 8.0.0.8
+
 Launch your vagrant
 
     vagrant up
