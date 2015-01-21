@@ -25,13 +25,9 @@ Command:
 
     ansible-playbook -i hosts/localhost ansible-generator.yml
 
-Install requirements:
+For configure your `/etc/hosts` change `update_hosts_file` to `True` in `ansible-generator.yml` and execute:
 
-    ansible-galaxy install -r requirements.txt --force
-
-Configure your `/etc/hosts` by default:
-
-    project-name.dev 8.0.0.8
+    ansible-playbook -i hosts/localhost ansible-generator.yml -K
 
 Launch your vagrant
 

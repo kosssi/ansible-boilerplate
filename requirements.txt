@@ -1,1 +1,1 @@
-kosssi.generator,v0.1.0
+kosssi.generator,v0.2.0
