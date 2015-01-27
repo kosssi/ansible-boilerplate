@@ -21,13 +21,19 @@ Configure the playbook in the file: `vars/ansible-generator.yml`
 
 ## Generate ansible playbook
 
-Command:
+### Command
 
     ansible-playbook -i hosts/localhost ansible-generator.yml
+
+### Update your hosts file
 
 For configure your `/etc/hosts` change `update_hosts_file` to `True` in `ansible-generator.yml` and execute:
 
     ansible-playbook -i hosts/localhost ansible-generator.yml -K
+
+After you can update `update_hosts_file` to `True` in `ansible-generator.yml` and execute default command.
+
+### Vagrant
 
 Launch your vagrant
 
