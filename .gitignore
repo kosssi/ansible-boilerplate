@@ -2,3 +2,5 @@
 vendor
 vault-password.txt
 vars/ansible-generator.yml
+playbook.yml
+Vagrantfile
