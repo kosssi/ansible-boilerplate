@@ -14,7 +14,7 @@ cd provisioning
 rm .git -rf
 
 # install dependency
-ansible-galaxy install -r requirements.txt --force
+git clone https://github.com/kosssi/ansible-role-generator.git vendor/roles/kosssi.generator
 
 # create ansible-generator.yml
 cat vars/ansible-generator.yml.dist | sed -e "s/generator/${name}/g" > vars/ansible-generator.yml
