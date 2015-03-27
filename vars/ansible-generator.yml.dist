@@ -7,13 +7,13 @@ project_name: generator
 #database_password: generator
 
 packages:
-#  - apache
   - apt
-#  - composer
 #  - fail2ban
 #  - iptables
-#  - mysql
 #  - php
+#  - composer
+#  - apache
+#  - mysql
 #  - ssh
 
 
